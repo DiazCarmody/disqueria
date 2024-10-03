@@ -1,0 +1,93 @@
+:root[data-theme="light"]{
+    --background-color: #f8f8f8;
+    --load-background-color: #f8f8f899;
+    --font-color: #111111;
+    --border-color: #b9b9b9;
+    --shadow-color: #fd0000c0;
+    --nav-color: #f8f8f8;
+    --principal-color: #a825ff;
+    --green-color: #8DC44F;
+    --white-color: #f8f8f8;
+
+    --shadow-color:#dddddd00;
+
+    --showsun: block;
+    --showmoon: none;
+}
+
+:root[data-theme="dark"] {
+    --background-color: #111111;
+    --load-background-color: #11111199;
+    --font-color: #f8f8f8;
+    --border-color: #333;
+    --nav-color: #111111;
+    --principal-color: #a825ff;
+    --shadow-color: #fd0000c0;
+    --green-color: #8DC44F;
+    --white-color: #f8f8f8;
+
+    --shadow-color:#202020;
+
+    --showsun: none;
+    --showmoon: block;
+}
+body{
+    overflow-y: hidden;
+}
+
+#contenedor_carga{
+    background-color: var(--load-background-color);
+    height: 100%;
+    width: 100%;
+
+    position: fixed;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    transition: all 1s ease;
+    z-index: 110;
+
+    backdrop-filter: blur(30px);
+    user-select: none;
+}
+#text{
+    color: var(--font-color);
+    font-weight: 500;
+
+    height: 90px;
+    width: 90px;
+
+    position: absolute;
+    top: 210px;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    margin: auto;
+
+}
+#carga{
+    height: 90px;
+    width: 90px;
+    background-image: url('.././vistas/images/icon/vinilo.png');
+    background-size: cover;
+  
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+  
+    -webkit-animation: girar 1.5s linear infinite;
+    -o-animation: girar 1.5s linear infinite;
+    animation: girar 1.5s linear infinite;
+}
+
+h3{
+    font-size: 20px;
+}
+
+@keyframes girar {
+    from { transform: rotate(0deg);}
+    to { transform: rotate(360deg);}
+}

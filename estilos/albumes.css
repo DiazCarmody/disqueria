@@ -1,0 +1,61 @@
+.albumes{
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centrar verticalmente */
+    padding: 20px; /* Espaciado */
+    background-color: var(--background-color);
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    margin: 0; /* Eliminar márgenes por defecto */
+}
+.product-container {
+    display: flex; /* Usar flexbox para alinear imagen y info */
+    width: 80%; /* Aumentar el ancho del contenedor */
+    max-width: 800px; /* Ancho máximo para evitar que se expanda demasiado */
+    border: var(--border-color) 1px solid;
+    border-radius: 10px;
+    background-color: var(--background-color);
+    box-shadow: var(--shadow-color) 0px 0px 8px 1px;
+    overflow: hidden;
+}
+.product-image {
+    width: 40%; /* Ancho de la imagen */
+    height: auto;
+}
+.product-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.product-info {
+    width: 60%; /* Ancho de la información */
+    padding: 20px; /* Espaciado interno */
+    display: flex;
+    flex-direction: column; /* Mantener la dirección de la columna */
+    justify-content: center; /* Centrar verticalmente */
+}
+.product-name {
+    font-size: 1.5em; /* Tamaño del nombre del álbum */
+    color: var(--font-color);
+    margin: 5px 0; /* Margen entre elementos */
+}
+.product-artist {
+    color: var(--secondary-color); /* Color del nombre del artista */
+    margin: 5px 0;
+}
+.product-price {
+    font-weight: bold; /* Negrita para el precio */
+    margin: 10px 0;
+}
+.add-to-cart {
+    background-color: var(--principal-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 5px;
+    padding: 10px; /* Espaciado */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%; /* Botón ocupa todo el ancho */
+}
+.add-to-cart:hover {
+    background-color: var(--green-color);
+}
