@@ -1,3 +1,7 @@
+<head>
+    <link rel="stylesheet" href="../estilos/style.css">
+</head>
+
 <main class="intro">
     <div class="contenedor intro-content">
         <form autocomplete="off" action="./logica/signin.php" method="POST" class="FormularioAjax">

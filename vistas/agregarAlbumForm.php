@@ -1,5 +1,5 @@
 <?php
-require_once('../logica/main.php');
+require_once('./logica/main.php');
 $conexion= conectar();
 $datos=$conexion->query("SELECT * FROM artistas;");
 $datos=$datos->fetchAll();
